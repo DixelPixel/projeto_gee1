@@ -1,0 +1,49 @@
+{% extends 'groups/base/base.html' %}
+
+{% load static %}
+
+{% block title %}Grupo de {{ group_name }}{% endblock %}
+
+
+{% block site_css %}
+    <link rel="stylesheet" href="{% static 'groups/styles/group-detail.css' %}">
+{% endblock %}
+
+    
+{% block main_heading %}
+    Aqui temos grupos de estudo!
+{% endblock %}
+
+{%block header_content%}
+    <p>{{ group_description }}</p>
+{% endblock %}
+
+{% block body %}
+{% if group_found %}
+
+    <article>
+        <img src="" alt="">
+
+        <section id="location">
+            <h2>Localização do grupo de estudo</h2>
+            <address>Vai ser la na <span>LOCATION</span>(ADDRESS)</address>
+        </section>
+
+        <section id="details">
+            <h2>Quais serão os assuntos do grupo?</h2>
+            <p>{{ group_description }}</p>
+            <footer>
+                <p>Precisa de mais detalhes? Favor <a href="">contatar os responsáveis</a> </p>
+            </footer>
+        </section>
+
+        <section id="registration">
+            <h2>Entre no Grupo:</h2>
+            Form
+        </section>
+    </article>    
+{% else %}
+    <p>Não encontramos nenhum grupo para esse slug.</p>
+{% endif %}
+
+{% endblock %}

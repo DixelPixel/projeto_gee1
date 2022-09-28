@@ -1,0 +1,31 @@
+{% extends 'groups/base/base.html' %}
+
+{% load static %}
+
+{% block title %}All groups{% endblock %}
+
+{% block site_css %}
+    <link rel="stylesheet" href="{% static 'groups/styles/all-groups.css' %}">
+{% endblock %}
+
+    
+{% block main_heading %}
+    Aqui temos grupos de estudo!
+{% endblock %}
+
+{% block header_content %}
+    <p>Ache um para sua matéria!</p>
+{% endblock %}
+
+{% block body %}
+    <section>
+        <h2>Grupos de Hoje:</h2>
+        <ol>
+            {% for group_item in groups %}
+             {% include 'groups/includes/group-item.html' with title=group_item.nome location='Place' slug=group_item.slug %}
+            {% endfor %}
+        </ol>
+    </section>
+
+{% endblock%}
+    
