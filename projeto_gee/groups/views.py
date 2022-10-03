@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from groups.models import Group
+from groups.model.groups import Group
 
 
 # Create your views here.
@@ -25,5 +25,6 @@ def group_details(request, group_slug):
         return render(request, 'groups/group-details.html',{
             'group_found' : False
         })
+
 
 #Admin - senha: BRUH
