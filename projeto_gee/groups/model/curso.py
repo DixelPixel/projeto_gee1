@@ -1,7 +1,6 @@
 from ast import Sub
 from django.db import models
 
-
 from .disciplina import *
 
 
