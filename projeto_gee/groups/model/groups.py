@@ -1,7 +1,9 @@
+# from msvcrt import open_osfhandle
+from ast import Sub
 from django.db import models
 
-from .location import Location
 from .student import Student
+from .location import Location
 from .curso import Curso
 from .disciplina import Disciplina
 
@@ -15,6 +17,7 @@ class Group(models.Model):
     date = models.DateField()
     slug = models.SlugField(unique=True)
     description = models.TextField()
+    # image = models.ImageField(upload_to='images')
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     student = models.ManyToManyField(Student)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
