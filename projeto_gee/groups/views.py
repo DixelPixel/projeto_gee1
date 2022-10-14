@@ -26,7 +26,10 @@ def group_details(request, group_slug):
             'group_found': False
         })
 
+
 # Admin - senha: BRUH
 
 def landing_page(request):
     return render(request, 'groups/logo.html')
+
+# mudança aleatoria
