@@ -32,4 +32,6 @@ def group_details(request, group_slug):
 def landing_page(request):
     return render(request, 'groups/logo.html')
 
-# mudança aleatoria
+
+def questionario(request):
+    return render(request, 'groups/corpodosite.html')
