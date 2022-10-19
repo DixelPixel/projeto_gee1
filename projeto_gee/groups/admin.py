@@ -9,6 +9,7 @@ from .model.disciplina import Disciplina
 from .questions.questions import Question
 from .questions.study_method import Study_method
 from .questions.tags import Tag
+from .questions.answer import Answer
 
 
 # Register your models here.
@@ -29,3 +30,4 @@ admin.site.register(Eventos)
 admin.site.register(Question)
 admin.site.register(Study_method)
 admin.site.register(Tag)
+admin.site.register(Answer)
