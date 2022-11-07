@@ -8,4 +8,6 @@ urlpatterns = [
     path('lp/', views.landing_page, name='landing-page'),
     path('questionario/', views.questionario, name='questionario'),
     path('error/', views.csrf_failure, name='error'),
+    path('cadastro/', views.cadastro, name='cadastro'),
+    path('login/', views.login, name='login'),
 ]

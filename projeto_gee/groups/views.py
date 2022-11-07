@@ -90,3 +90,9 @@ def questionario(request):
 def csrf_failure(request, reason=""):
     ctx = {'message': 'some custom messages'}
     return render(request, 'groups/error.html')
+
+def cadastro(request):
+    return render(request,'groups/cadastro.html')
+
+def login(request):
+    return render(request,'groups/login.html')
