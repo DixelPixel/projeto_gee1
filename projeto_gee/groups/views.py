@@ -96,3 +96,6 @@ def cadastro(request):
 
 def login(request):
     return render(request,'groups/login.html')
+
+def recomendacoes(request):
+    return render(request,'groups/recomendacoes.html')

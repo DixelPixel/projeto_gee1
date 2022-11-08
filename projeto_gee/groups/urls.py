@@ -10,4 +10,5 @@ urlpatterns = [
     path('error/', views.csrf_failure, name='error'),
     path('cadastro/', views.cadastro, name='cadastro'),
     path('login/', views.login, name='login'),
+    path('recomendacoes/', views.recomendacoes, name='recomendacoes'),
 ]
