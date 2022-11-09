@@ -99,3 +99,6 @@ def login(request):
 
 def recomendacoes(request):
     return render(request,'groups/recomendacoes.html')
+
+def questionario2(request):
+    return render(request,'groups/questionario.html')
