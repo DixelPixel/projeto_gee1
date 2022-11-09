@@ -102,3 +102,6 @@ def recomendacoes(request):
 
 def questionario2(request):
     return render(request,'groups/questionario.html')
+
+def criar_evento(request):
+    return render(request,'groups/criar_evento.html')
