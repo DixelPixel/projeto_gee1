@@ -105,3 +105,6 @@ def questionario2(request):
 
 def criar_evento(request):
     return render(request,'groups/criar_evento.html')
+
+def tela_principal(request):
+    return render(request,'groups/tela_principal.html')

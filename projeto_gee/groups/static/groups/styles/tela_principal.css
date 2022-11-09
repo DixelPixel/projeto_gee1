@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background-color: #fff;
+}
+
+.cabeçalho{
+    width: 100%;
+    background-color: #05226D;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    background-color: #BFBFBF;
+    border-radius: 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo-texto{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.btn-criargrupo{
+    display: block;
+    margin-left: auto;
+    margin-right: 70px;
+    background-color: #0047FF;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 12px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    margin-right: 550px;
+    font-size: 36px;
+}
+
+.grupo{
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 930px;
+    height: 220px;
+    display: flex;
+    padding: 25px;
+    padding-left: 50px;
+}
+
+.img-grupo{
+    width: 170px;
+    height: 170px;
+    background-color: rgb(180, 23, 23);
+}
+
+.texto-grupo{
+    margin-left: 50px;
+}
+
+.titulo-grupo{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn-entrar{
+    display: block;
+    margin-left: 450px;
+    margin-top: -50px;
+    background-color: #00861D;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 12px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn-participar{
+    display: block;
+    margin-left: 450px;
+    margin-top: -70px;
+    background-color: #00861D;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 12px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.lateral{
+    margin-top: -650px;
+    margin-left: 30px;
+    width: 215px;
+}
+
+.lat-agenda a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.lat-rec a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.texto-rec{
+    text-align: center;
+    width: 140px;
+    margin-top: 10px;
+    background-color: #BFBFBF;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.btn-quest{
+    display: block;
+    background-color: #0047FF;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 12px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.lat-grupos{
+    font-weight: 600;
+}
+
+.lat-g1{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.img-lat-grupo{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(180, 23, 23);
+}
+
+.txt-g1{
+    margin-left: 10px;
+}

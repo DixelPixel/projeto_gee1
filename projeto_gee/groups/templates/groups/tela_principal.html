@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos da semana</title>
+    <link rel="stylesheet" href="{% static 'groups/styles/tela_principal.css' %}">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="logo">
+            <div class="logo-img"></div>
+            <div class="logo-texto">
+                <h1>GEUs</h1>
+            </div>
+        </div>
+    </header>
+    <button class="btn-criargrupo">+ Criar grupo</button>
+    <div class="container">
+        <h1 class="titulo">Grupos da semana:</h1>
+        <br><br>
+        <div class="grupo">
+            <div class="img-grupo"></div>
+            <div class="texto-grupo">
+                <p class="titulo-grupo">Grupos de cálculo 123</p>
+                <br>
+                <p>Disciplina: Cálculo B</p>
+                <br>
+                <p>Data: 30/09/2022</p>
+                <br>
+                <p>Participantes: 4</p>
+                <br>
+                <p>Grupo aberto</p>
+                <button class="btn-entrar">Entrar no grupo</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="grupo">
+            <div class="img-grupo"></div>
+            <div class="texto-grupo">
+                <p class="titulo-grupo">Grupos de prog 456</p>
+                <br>
+                <p>Disciplina: Programação 2</p>
+                <br>
+                <p>Data: 2/10/2022</p>
+                <br>
+                <p>Participantes: 3</p>
+                <br>
+                <p>Grupo fechado</p>
+                <button class="btn-participar">Pedir para participar</button>
+            </div>
+        </div>
+    </div>
+    <div class="lateral">
+        <div class="lat-agenda"><a href="#">Agenda</a></div>
+        <br>
+        <div class="lat-rec">
+            <a href="#">Recomendações</a>
+            <p class="texto-rec">Para acessar as recomendações de estudo, preencha o questionário.</p>
+            <button class="btn-quest">Questionário</button>
+        </div>
+        <br>
+        <p class="lat-grupos">Grupos</p>
+        <div class="lat-g1">
+            <div class="img-lat-grupo"></div>
+            <p class="txt-g1">Grupo de prog</p>
+        </div>
+    </div>
+    <div class="t"></div>
+</body>
+</html>

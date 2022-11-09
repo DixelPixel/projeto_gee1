@@ -13,4 +13,5 @@ urlpatterns = [
     path('recomendacoes/', views.recomendacoes, name='recomendacoes'),
     path('questionario2/', views.questionario2, name='questionario2'),
     path('criar-evento/',views.criar_evento,name = 'criar-evento'),
+    path('tela_principal/',views.tela_principal,name = 'tela_principal'),
 ]
