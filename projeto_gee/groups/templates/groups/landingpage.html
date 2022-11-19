@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEUs</title>
+    <link rel="stylesheet" href="{% static 'groups/styles/landingpage.css' %}">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="logo">
+            <div class="logo-img"></div>
+            <div class="logo-texto">
+                <a href="#"><h1>GEUs</h1></a>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="/login/">Login</a></li>
+                <li><a href="/cadastro/">Crie sua conta</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="textos">
+            <h1 class="titulo">O lugar ideal para criar grupos de estudo!</h1>
+            <p class="subtitulo">O GEU te conecta com outras pessoas para solucionar o seu problema da maneira mais eficaz.</p>
+            <p class="btn_cria_conta"><a href="/cadastro/">Crie sua conta</a></p>
+        </div>
+        <img class="img" src="{% static 'groups/images/img_lp.jpg' %}" alt="img grupo">
+    </div>
+</body>
+</html>

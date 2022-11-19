@@ -108,3 +108,6 @@ def criar_evento(request):
 
 def tela_principal(request):
     return render(request,'groups/tela_principal.html')
+
+def landingpage(request):
+    return render(request,'groups/landingpage.html')

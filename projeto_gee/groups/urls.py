@@ -14,4 +14,5 @@ urlpatterns = [
     path('questionario2/', views.questionario2, name='questionario2'),
     path('criar-evento/',views.criar_evento,name = 'criar-evento'),
     path('tela_principal/',views.tela_principal,name = 'tela_principal'),
+    path('landingpage/',views.landingpage,name = 'landingpage'),
 ]

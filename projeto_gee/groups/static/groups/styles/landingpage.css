@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background-color: #fff;
+}
+
+.cabeçalho{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: center;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    background-color: #BFBFBF;
+    border-radius: 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo-texto{
+    margin-left: 20px;
+}
+
+.logo-texto a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #05226D;
+    padding: 10px 17px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    padding: 60px 70px;
+}
+
+.titulo{
+    font-size: 68px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.subtitulo{
+    font-size: 36px;
+    font-weight: 600;
+    color: #5C5858;
+    padding: 20px 0;
+}
+
+.btn_cria_conta{
+    padding: 20px 0;
+}
+
+.btn_cria_conta a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #05226D;
+    padding: 15px 23px;
+    border-radius: 10px;
+}
+
+.img{
+    width: 750px;
+    height: 600px;
+}
