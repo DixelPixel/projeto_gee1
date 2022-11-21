@@ -15,4 +15,5 @@ urlpatterns = [
     path('criar-evento/',views.criar_evento,name = 'criar-evento'),
     path('tela_principal/',views.tela_principal,name = 'tela_principal'),
     path('landingpage/',views.landingpage,name = 'landingpage'),
+    path('chat/',views.chat,name='chat'),
 ]

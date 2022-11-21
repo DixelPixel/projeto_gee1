@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background-color: #EDEDED;
+
+}
+
+.cabeçalho{
+    width: 100%;
+    background-color: #05226D;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    color: #fff;
+    align-items: center;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: -150px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto{
+    margin-left: 20px;
+    margin-top: -150px;
+}
+
+.contato a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contato{
+    margin-top: -150px;
+
+}
+
+
+.chat{
+    display:flex;
+    height:120vh;
+    background-color:#f8f8f8;
+    justify-content:center;
+    padding:20px 30px;
+
+}
+
+
+.container{
+  width: 450px;
+  /*! height: 80vh; */
+  flex-direction: column;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+  background-color: dodgerblue;
+
+
+  display: flex;
+  /*! flex-direction: column; */
+  /*! flex: ; */
+}
+
+.header h1{
+    color: white;
+    padding: 15px;
+}
+
+.corpo {
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px 30px;
+    bottom: 0px;
+    bottom: 0;
+    flex: 1;
+}
+
+.message{
+    background-color: dodgerblue;
+    padding: 20px 30px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message{
+    margin-left:auto;
+    background-color:white;
+    color:black;
+
+}
+
+.footer{
+    /*! display:flex; */
+    /*! align-items:flex-end; */
+    /*! float:bottom; */
+    /*! position: absolute; */
+    bottom: 0px;
+    /*! position: relative; */
+}
+
+
+.chat-message {
+    display: flex;
+    /*! flex-direction: row; */
+    /*! justify-content: end; */
+}
+
+.chat-message input{
+    flex:1;
+    height:40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.chat-message button{
+    /*! flex:1; */
+    height:40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    /*! width: ; */
+    /*! justify-content: end; */
+    width: 100px;
+}
+
+.chat-message button:hover {
+    background-color:blue;
+    transition: 0.2s ease;
+}

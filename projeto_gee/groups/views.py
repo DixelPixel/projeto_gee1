@@ -149,3 +149,5 @@ def tela_principal(request):
 
 def landingpage(request):
     return render(request,'groups/landingpage.html')
+def chat(request):
+    return render(request,'groups/chat.html')

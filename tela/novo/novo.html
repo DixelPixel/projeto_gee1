@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEUs</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    background-color: #EDEDED;
+}
+.cabeçalho{
+    width: 100%;
+    background-color: #05226D;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    color: #fff;
+    align-items: center;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: -150px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-texto{
+    margin-left: 20px;
+    margin-top: -150px;
+}
+.contato a {
+    color: #fff;
+    text-decoration: none;
+}
+.contato{
+    margin-top: -150px;
+}
+.tela-cadastro {
+    
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 70px;
+    border-radius: 20px;
+    margin-top: 65px;
+    height: 750px;
+    width: 430px;
+}
+.titulo-cadastro{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -30px;
+}
+.caixa {
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 290px;
+}
+.tela-cadastro a{
+    color: #05226D;
+    font-size: smaller;
+}
+.btn-criar-conta{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #05226D;
+    color: #fff;
+    border: none;
+    border-radius: 29px;
+    padding: 12px 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="logo">
+            <div class="logo-img"></div>
+            <div class="logo-texto">
+                <h1>GEUs</h1>
+            </div>
+        </div>
+        <div class="contato">
+            <a href="#">Contato</a>
+        </div>
+</header>
+</div>
+<div class="tela-cadastro">
+    <h1 class="titulo-cadastro">cadastro</h1>
+    <br><br><br>
+    <input class="caixa" type="text" placeholder="Email">
+    <br><br>
+    <input class="caixa" type="text" placeholder="Nome completo">
+    <br><br>
+    <input class="caixa" type="text" placeholder="Nome de usuário">
+    <br><br>
+    <input class="caixa" type="password" placeholder="Senha">
+    <br><br>
+    <input class="caixa" type="password" placeholder="Confirmar senha">
+    <br><br>
+    <input class="caixa" type="text" placeholder="Curso">
+    <br><br>
+    <button class="btn-criar-conta">Criar conta</button>
+</div>
+</body>
+</html>
