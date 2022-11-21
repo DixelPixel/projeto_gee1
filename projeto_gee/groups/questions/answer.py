@@ -6,9 +6,7 @@ from ..const import AGREE_LEVELS
 
 class Answer(models.Model):
     answer = models.CharField(
-        choices=AGREE_LEVELS,
-        max_length=1,
-        verbose_name='Agree'
+        max_length=10
     )
 
     question = models.ForeignKey(Question, on_delete=models.CASCADE)

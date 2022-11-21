@@ -100,7 +100,45 @@ def login(request):
 def recomendacoes(request):
     return render(request,'groups/recomendacoes.html')
 
+@csrf_protect
 def questionario2(request):
+    questions = Question.objects.all()
+    if request.method=='POST':
+        q1 = request.POST['1']
+        q2 = request.POST['1']
+        q3 = request.POST['3']
+        q4 = request.POST['4']
+        q5 = request.POST['5']
+        q6 = request.POST['6']
+        q7 = request.POST['7']
+        q8 = request.POST['8']
+        q9 = request.POST['9']
+        q10 = request.POST['10']
+        
+        quest1 = Answer.objects.create(answer=q1,question=questions[0])
+        quest2 = Answer.objects.create(answer=q2,question=questions[1])
+        quest3 = Answer.objects.create(answer=q3,question=questions[2])
+        quest4 = Answer.objects.create(answer=q4,question=questions[3])
+        quest5 = Answer.objects.create(answer=q5,question=questions[4])
+        quest6 = Answer.objects.create(answer=q6,question=questions[5])
+        quest7 = Answer.objects.create(answer=q7,question=questions[6])
+        quest8 = Answer.objects.create(answer=q8,question=questions[7])
+        quest9 = Answer.objects.create(answer=q9,question=questions[8])
+        quest10 = Answer.objects.create(answer=q10,question=questions[9])
+
+        quest1.save()
+        quest2.save()
+        quest3.save()
+        quest4.save()
+        quest5.save()
+        quest6.save()
+        quest7.save()
+        quest8.save()
+        quest9.save()
+        quest10.save()
+        
+
+
     return render(request,'groups/questionario.html')
 
 def criar_evento(request):
