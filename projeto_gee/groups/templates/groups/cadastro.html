@@ -23,19 +23,22 @@
     </header>
     </div>
     <div class="tela-cadastro">
-        <h1 class="titulo-cadastro">Cadastro</h1>
-        <br><br><br>
-        <input class="caixa" type="text" placeholder="Email">
-        <br><br>
-        <input class="caixa" type="text" placeholder="Nome completo">
-        <br><br>
-        <input class="caixa" type="text" placeholder="Nome de usuário">
-        <br><br>
-        <input class="caixa" type="password" placeholder="Senha">
-        <br><br>
-        <input class="caixa" type="password" placeholder="Confirmar senha">
-        <br><br>
-        <button class="btn-criar-conta">Criar conta</button>
+        <form action="/cadastro/" method="POST">
+        {% csrf_token %}
+            <h1 class="titulo-cadastro">Cadastro</h1>
+            <br><br><br>
+            <input class="caixa" type="text" placeholder="Email" name="email">
+            <br><br>
+            <input class="caixa" type="text" placeholder="Nome completo" name="nome">
+            <br><br>
+            <input class="caixa" type="text" placeholder="Nome de usuário" name="usuario">
+            <br><br>
+            <input class="caixa" type="password" placeholder="Senha" name="senha">
+            <br><br>
+            <input class="caixa" type="password" placeholder="Confirmar senha" name="confirmar">
+            <br><br>
+            <button class="btn-criar-conta">Criar conta</button>
+        </form>
     </div>
 </body>
 </html>

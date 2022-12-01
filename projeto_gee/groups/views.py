@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from groups.model.groups import Group
+from groups.model.student import Student
 from groups.questions.questions import Question
 from groups.questions.answer import Answer
 from .forms import AnswersForm
@@ -91,19 +92,34 @@ def csrf_failure(request, reason=""):
     ctx = {'message': 'some custom messages'}
     return render(request, 'groups/error.html')
 
+
+@csrf_protect
 def cadastro(request):
-    return render(request,'groups/cadastro.html')
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        nome = request.POST.get('nome')
+        usuario = request.POST.get('usuario')
+        senha = request.POST.get('senha')
+        confirmar = request.POST.get('confirmar')
+
+        new_User = Student.objects.create(email=email, nome=nome, usuario=usuario, senha=senha, confirmar=confirmar)
+
+
+    return render(request, 'groups/cadastro.html')
+
 
 def login(request):
-    return render(request,'groups/login.html')
+    return render(request, 'groups/login.html')
+
 
 def recomendacoes(request):
-    return render(request,'groups/recomendacoes.html')
+    return render(request, 'groups/recomendacoes.html')
+
 
 @csrf_protect
 def questionario2(request):
     questions = Question.objects.all()
-    if request.method=='POST':
+    if request.method == 'POST':
         q1 = request.POST['1']
         q2 = request.POST['1']
         q3 = request.POST['3']
@@ -114,17 +130,17 @@ def questionario2(request):
         q8 = request.POST['8']
         q9 = request.POST['9']
         q10 = request.POST['10']
-        
-        quest1 = Answer.objects.create(answer=q1,question=questions[0])
-        quest2 = Answer.objects.create(answer=q2,question=questions[1])
-        quest3 = Answer.objects.create(answer=q3,question=questions[2])
-        quest4 = Answer.objects.create(answer=q4,question=questions[3])
-        quest5 = Answer.objects.create(answer=q5,question=questions[4])
-        quest6 = Answer.objects.create(answer=q6,question=questions[5])
-        quest7 = Answer.objects.create(answer=q7,question=questions[6])
-        quest8 = Answer.objects.create(answer=q8,question=questions[7])
-        quest9 = Answer.objects.create(answer=q9,question=questions[8])
-        quest10 = Answer.objects.create(answer=q10,question=questions[9])
+
+        quest1 = Answer.objects.create(answer=q1, question=questions[0])
+        quest2 = Answer.objects.create(answer=q2, question=questions[1])
+        quest3 = Answer.objects.create(answer=q3, question=questions[2])
+        quest4 = Answer.objects.create(answer=q4, question=questions[3])
+        quest5 = Answer.objects.create(answer=q5, question=questions[4])
+        quest6 = Answer.objects.create(answer=q6, question=questions[5])
+        quest7 = Answer.objects.create(answer=q7, question=questions[6])
+        quest8 = Answer.objects.create(answer=q8, question=questions[7])
+        quest9 = Answer.objects.create(answer=q9, question=questions[8])
+        quest10 = Answer.objects.create(answer=q10, question=questions[9])
 
         quest1.save()
         quest2.save()
@@ -136,18 +152,21 @@ def questionario2(request):
         quest8.save()
         quest9.save()
         quest10.save()
-        
 
+    return render(request, 'groups/questionario.html')
 
-    return render(request,'groups/questionario.html')
 
 def criar_evento(request):
-    return render(request,'groups/criar_evento.html')
+    return render(request, 'groups/criar_evento.html')
+
 
 def tela_principal(request):
-    return render(request,'groups/tela_principal.html')
+    return render(request, 'groups/tela_principal.html')
+
 
 def landingpage(request):
-    return render(request,'groups/landingpage.html')
+    return render(request, 'groups/landingpage.html')
+
+
 def chat(request):
-    return render(request,'groups/chat.html')
+    return render(request, 'groups/chat.html')
